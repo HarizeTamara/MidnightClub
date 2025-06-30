@@ -1,0 +1,173 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+main {
+  display: flex;
+}
+p {
+  line-height: 1;
+}
+span {
+  display: block;
+  width: 2vmax;
+  height: 2vmax;
+  font-size: 2vmax;
+  color: #9bff9b11;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#password-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 0 10px #00ff00aa;
+}
+
+#password-container label {
+  color: #00ff00;
+  font-family: monospace;
+  font-size: 1.2rem;
+}
+
+#password-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#password-form input {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  background: black;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  font-family: monospace;
+  outline: none;
+  box-shadow: 0 0 5px #00ff00aa;
+}
+
+#password-form input:focus {
+  box-shadow: 0 0 10px #00ff00;
+}
+
+#password-form button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: black;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  font-family: monospace;
+  transition: background 0.3s, color 0.3s;
+  box-shadow: 0 0 5px #00ff00aa;
+}
+
+#password-form button:hover {
+  background: #00ff00;
+  color: black;
+  box-shadow: 0 0 15px #00ff00;
+}
+ 
+body.alerta-vermelho #password-container { 
+  box-shadow: 0 0 10px #ff0000aa !important; 
+}
+
+body.alerta-vermelho #password-container label, 
+body.alerta-vermelho #password-form input,
+body.alerta-vermelho #password-form button {
+  border-color: red !important;
+  color: red !important;
+  box-shadow: 0 0 10px red !important;
+}
+
+body.alerta-vermelho #password-form button:hover {
+  background: red !important;
+  color: black !important;
+  box-shadow: 0 0 20px red !important;
+}
+
+.page-section {
+    display: none; /* Por padrão, todas as seções estão ocultas */
+    padding: 20px;
+    margin-top: 60px; /* Para evitar que o conteúdo fique atrás do header fixo, se houver */
+}
+
+.page-section.active {
+    display: block; /* A seção ativa é exibida */
+}
+
+/* Opcional: Estilos para o menu de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.zoom-wrapper {
+  overflow: hidden;
+  touch-action: none;
+  cursor: grab;
+}
+
+.zoom-wrapper img {
+  transform-origin: center center;
+  cursor: grab;
+}
+
+body { background: #000; color: #00ff00; font-family: monospace; }
+.content { display:grid; grid-template-columns:1fr; gap:2rem; padding:2rem; max-width:800px; margin:0 auto; }
+@media(min-width:768px){ .content{grid-template-columns:1fr 1fr;} }
+.content--left label, .content--left input, .content--left select, #calculate-btn {
+  display:block; width:100%; margin:0.5rem 0; background:#000;
+  color:#00ff00; border:1px solid #00ff00; padding:0.5rem;
+}
+#calculate-btn:hover { background:#00ff00; color:#000; cursor:pointer; }
+#calculation-result {
+  background:#111; padding:1.5rem; border:1px solid #00ff00;
+  box-shadow:0 0 10px #00ff00aa; min-height:200px; white-space:pre-wrap;
+}
+#calculation-result strong { display:block; margin-top:1rem; }
+#calculation-result ul { margin:0.5rem 0 0 1.2rem; list-style:none; padding:0; }
+#calculation-result li { margin-bottom:0.3rem; }
+
+.glitch {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #00ff00;
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  z-index: 1000;
+  pointer-events: none;
+}

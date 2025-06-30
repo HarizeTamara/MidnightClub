@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Midnight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="glitch" data-text="Midnight">Midnight</h1>
+  <div class="content">
+    <div class="content--left">
+      <label>Selecione a receita:</label>
+      <select id="recipe-select"></select>
+      <label>Quantidade:</label>
+      <input type="number" id="recipe-quantity" value="1" min="1">
+      <button id="calculate-btn">Calcular Receita</button>
+    </div>
+    <div id="calculation-result" class="content--right"></div>
+  </div>
+
+  <script type="module" src="contrabando.js"></script>
+</body>
+</html>
