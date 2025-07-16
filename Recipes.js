@@ -12,5 +12,14 @@ export const recipesMidnight = {
         { name: "Máscara de Solda", quantity: 1 },
       ]
     },
+    "Cocaína": {
+      yield: 20,
+      Price: 60.0,
+      ingredients: [
+        { name: "Folha de Coca", quantity: 10 },
+        { name: "Galão de Combustivel Vazio", quantity: 1 },
+        { name: "Solvente", quantity: 4 },
+      ]
+    },
   };
   

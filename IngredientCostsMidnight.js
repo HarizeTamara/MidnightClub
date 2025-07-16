@@ -6,5 +6,8 @@ export const ingredientCosts = {
     "Borracha": 10.0,
     "Maçarico": 15.0,
     "Máscara de Solda": 10.0,
+    "Folha de Coca": 10.0,
+    "Galão de Combustivel Vazio": 100.0,
+    "Solvente": 20.0,
   };
   

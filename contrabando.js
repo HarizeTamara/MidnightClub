@@ -18,7 +18,10 @@ const emojiMap = {
   'Plástico':'🧩',
   'Borracha':'🦠',
   'Maçarico':'🧨',
-  'Máscara de Solda':'🎭'
+  'Máscara de Solda':'🎭',
+  'Folha de Coca':'🍃',
+  'Galão de Combustivel Vazio':'🛢️',
+  'Solvente':'🧪',
 };
 
 function calculateRecipe() {
